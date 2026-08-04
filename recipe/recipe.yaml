@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.6.0"
+  version: "0.7.3"
   python_min: "3.12.0"
 
 package:
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/x/xpublish-tiles/xpublish_tiles-${{ version }}.tar.gz
-  sha256: c6585a17d560e7a04b0cd6e47a3a56266be15eb2e7daa2fbcec5b73ff4b74fc8
+  sha256: 51548bd0c982e8350b170e326d81d6337a99cbddeeb7037484c9f1f8cbecb044
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
